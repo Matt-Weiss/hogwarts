@@ -1,0 +1,12 @@
+<h1><%= @students.count %> Students</h1>
+
+<h3> House Students </h3><br>
+<ul>
+<% @students.each do |student| %>
+<li class="student" id="student<%= student[:id] %>">
+  <div>ID = <%= student[:id] %></div>
+  <div>Name = <%= student[:name] %></div>
+  <br>
+</li>
+<% end %>
+</ul>
