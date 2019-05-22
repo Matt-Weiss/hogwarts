@@ -1,8 +1,9 @@
-<h1><%= @students.count %> Students</h1>
+<!-- To run the first story, replace 'facade' with '@students' -->
+<h1><%= facade.count_students %> Students</h1>
 
 <h3> House Students </h3><br>
 <ul>
-<% @students.each do |student| %>
+<% facade.students.each do |student| %>
 <li class="student" id="student<%= student[:id] %>">
   <div>ID = <%= student[:id] %></div>
   <div>Name = <%= student[:name] %></div>
